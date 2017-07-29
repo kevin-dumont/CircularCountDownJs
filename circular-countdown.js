@@ -27,7 +27,7 @@
 
     function CircularCountDown(data, element) {
         this.element = element;
-        this.data = jQuery.extend(true, defaultOptions, data);
+        this.data = jQuery.extend(true, {}, defaultOptions, data);
         this.init();
     }
 
